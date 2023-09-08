@@ -17,6 +17,7 @@ sudo apt-get -y install beepy-kbd sharp-drm
 
 sudo mkdir $SCHEDULED_FUNCTIONS_FOLDER
 sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/battery.sh -O $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
+sudo chmod +x $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
 
 sudo echo "* * * * * root (           "$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
 sudo echo "* * * * * root (           "$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
