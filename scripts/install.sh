@@ -18,12 +18,13 @@ sudo apt-get -y install beepy-kbd sharp-drm
 sudo mkdir $SCHEDULED_FUNCTIONS_FOLDER
 sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/battery.sh -O $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
 
-sudo echo "* * * * * root (           "$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ")" >> /etc/cron.d/e2scrub_all
-sudo echo "* * * * * root ( sleep 10 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ")" >> /etc/cron.d/e2scrub_all
-sudo echo "* * * * * root ( sleep 20 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ")" >> /etc/cron.d/e2scrub_all
-sudo echo "* * * * * root ( sleep 30 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ")" >> /etc/cron.d/e2scrub_all
-sudo echo "* * * * * root ( sleep 40 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ")" >> /etc/cron.d/e2scrub_all
-sudo echo "* * * * * root ( sleep 50 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ")" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root (           "$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root (           "$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root ( sleep 10 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root ( sleep 20 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root ( sleep 30 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root ( sleep 40 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
+sudo echo "* * * * * root ( sleep 50 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" ") >> "$SCHEDULED_FUNCTIONS_FOLDER"/batteryjob.log" >> /etc/cron.d/e2scrub_all
 
 
 # sudo reboot
