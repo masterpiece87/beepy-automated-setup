@@ -35,7 +35,8 @@ sudo echo "* * * * * root ( sleep 40 ;"$SCHEDULED_FUNCTIONS_FOLDER"/battery.sh" 
 # System Update Schedule
 sudo echo "0 0 * * * root (curl -s "$UPDATE_SCRIPT" | bash ) > "$SCHEDULED_FUNCTIONS_FOLDER"/update.log" >> /etc/cron.d/e2scrub_all
 
-
+# Update font to standard one.
+sudo sed -i 's/8x8/8x16/g' /boot/cmdline.txt
 
 
 sudo reboot
