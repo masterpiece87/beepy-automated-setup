@@ -16,6 +16,6 @@ sudo apt-get -y install beepy-kbd sharp-drm
 
 sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/battery.sh -O $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
 sudo chmod +x $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
-sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/wx.sh -O $CUSTOMFUNCTIONS/wx.sh
-sudo chmod +x $CUSTOMFUNCTIONS/wx.sh
+sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/wx -O $CUSTOMFUNCTIONS/wx
+sudo chmod +x $CUSTOMFUNCTIONS/wx
 

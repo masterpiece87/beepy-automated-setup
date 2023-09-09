@@ -22,14 +22,14 @@ sudo curl -s --compressed -o /etc/apt/sources.list.d/beepy.list "https://ardange
 sudo apt update
 sudo apt-get -y install beepy-kbd sharp-drm
 
-	
+
 # CUSTOM SCRIPTS INSTALLATION
 sudo mkdir $CUSTOMFUNCTIONS
 sudo mkdir $SCHEDULED_FUNCTIONS_FOLDER
 sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/battery.sh -O $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
 sudo chmod +x $SCHEDULED_FUNCTIONS_FOLDER/battery.sh
-sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/wx.sh -O $CUSTOMFUNCTIONS/wx.sh
-sudo chmod +x $CUSTOMFUNCTIONS/wx.sh
+sudo wget https://raw.githubusercontent.com/masterpiece87/beepy-hacks/mainline/scripts/wx -O $CUSTOMFUNCTIONS/wx
+sudo chmod +x $CUSTOMFUNCTIONS/wx
 
 
 
