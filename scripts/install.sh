@@ -20,6 +20,7 @@ UPDATE_SCRIPT=https://raw.githubusercontent.com/masterpiece87/beepy-automated-se
 curl -s --compressed "https://ardangelo.github.io/beepy-ppa/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/beepy.gpg >/dev/null
 sudo curl -s --compressed -o /etc/apt/sources.list.d/beepy.list "https://ardangelo.github.io/beepy-ppa/beepy.list"
 sudo apt update
+sudo apt-get -y install tmux
 sudo apt-get -y install beepy-kbd sharp-drm
 
 
